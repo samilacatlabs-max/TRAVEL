@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Yaman Deniyaye</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#166534',
+                        secondary: '#4ade80',
+                        accent: '#facc15',
+                        dark: '#1f2937'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 navbar-transparent py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="logo-text font-serif text-3xl font-bold tracking-tighter">
+                        Yaman <span class="text-secondary">Deniyaye</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center font-medium">
+                    <a href="index.html" class="nav-link transition-colors duration-300">Home</a>
+                    <a href="destinations.html" class="nav-link transition-colors duration-300">Destinations</a>
+                    <a href="about.html" class="nav-link transition-colors duration-300 text-secondary">About Us</a>
+                    <a href="contact.html" class="nav-link transition-colors duration-300">Contact</a>
+                    <a href="destinations.html"
+                        class="bg-primary hover:bg-green-700 text-white px-6 py-2 rounded-full transition-transform transform hover:scale-105 duration-300 shadow-lg">Plan
+                        Trip</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                        <i id="menu-icon" class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-xl absolute w-full top-full left-0">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="block px-3 py-2 text-gray-800 hover:text-primary hover:bg-green-50 rounded-md font-medium">Home</a>
+                <a href="destinations.html"
+                    class="block px-3 py-2 text-gray-800 hover:text-primary hover:bg-green-50 rounded-md font-medium">Destinations</a>
+                <a href="about.html" class="block px-3 py-2 text-primary bg-green-50 rounded-md font-medium">About
+                    Us</a>
+                <a href="contact.html"
+                    class="block px-3 py-2 text-gray-800 hover:text-primary hover:bg-green-50 rounded-md font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="hero-about h-[60vh] flex flex-col justify-center items-center text-center px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative z-10 max-w-4xl mx-auto transform translate-y-10 animate-[fade-in-up_1s_ease-out_forwards]">
+            <h1 class="text-5xl md:text-6xl font-serif font-bold text-white leading-tight mb-4 drop-shadow-xl">
+                About Us
+            </h1>
+            <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light drop-shadow">
+                Connecting you with the true essence of Deniyaya.
+            </p>
+            <div class="text-white text-sm font-semibold uppercase tracking-wider space-x-2">
+                <a href="index.html" class="hover:text-secondary transition">Home</a>
+                <span>/</span>
+                <span class="text-secondary">About</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16 mb-24">
+                <div class="lg:w-1/2">
+                    <span class="text-primary font-semibold tracking-wider uppercase mb-2 block">Our Story</span>
+                    <h2 class="text-4xl lg:text-5xl font-serif font-bold text-dark mb-6 leading-tight">We Love Nature,
+                        <br>And We Want to Share it.
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Deniyaya is a paradise on earth, heavily forested and rich in biodiversity. For years, the
+                        stunning sceneries, the cool climate, and the welcoming people have been a well-kept secret of
+                        the south.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        At <strong class="text-dark">Yaman Deniyaye</strong>, our mission is to introduce the unspoiled
+                        beauty of this region to the world, while preserving its natural integrity. We organize
+                        eco-friendly tours to the Sinharaja Rain Forest, Patna Waterfalls, Kanneliya and lush green tea
+                        estates.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-secondary text-xl mr-3"></i>
+                            <span class="font-medium">10+ Years of local guiding experience</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-secondary text-xl mr-3"></i>
+                            <span class="font-medium">Focus on sustainable and green tourism</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-secondary text-xl mr-3"></i>
+                            <span class="font-medium">Customizable holiday packages</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+                        <img src="Img/Deniyaya.JPG" alt="Team guiding"
+                            class="w-full h-auto object-cover transform transition duration-700 group-hover:scale-105">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="bg-primary rounded-3xl p-12 text-center text-white shadow-2xl relative overflow-hidden mb-24">
+                <div class="absolute inset-0 bg-black opacity-10"></div>
+                <div class="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-green-600">
+                    <div>
+                        <div class="text-5xl font-serif font-bold mb-2">5+</div>
+                        <div class="text-green-100 uppercase tracking-wider text-sm">Years Exp.</div>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-serif font-bold mb-2">1.5k</div>
+                        <div class="text-green-100 uppercase tracking-wider text-sm">Happy Tourists</div>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-serif font-bold mb-2">20</div>
+                        <div class="text-green-100 uppercase tracking-wider text-sm">Destinations</div>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-serif font-bold mb-2">12</div>
+                        <div class="text-green-100 uppercase tracking-wider text-sm">Local Guides</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team -->
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold tracking-wider uppercase mb-2 block">The People</span>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-dark">Meet Our Guides</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-gray-50 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="" alt="Guide 1"
+                        class="w-32 h-32 rounded-full mx-auto object-cover mb-6 border-4 border-white shadow-md">
+                    <h3 class="text-xl font-bold text-dark mb-1">Kasun Jayawardena</h3>
+                    <p class="text-primary font-medium mb-4">Lead Trekker - Sinharaja</p>
+                    <p class="text-gray-600 text-sm mb-6">Expert in local flora and fauna, making every trek an
+                        educational journey.</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="" alt="Guide 2"
+                        class="w-32 h-32 rounded-full mx-auto object-cover mb-6 border-4 border-white shadow-md">
+                    <h3 class="text-xl font-bold text-dark mb-1">Amila Perera</h3>
+                    <p class="text-primary font-medium mb-4">Tour Coordinator</p>
+                    <p class="text-gray-600 text-sm mb-6">Ensures your stay and travel are seamless, comfortable, and
+                        absolutely safe.</p>
+                </div>
+                <div class="bg-gray-50 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="" alt="Guide 3"
+                        class="w-32 h-32 rounded-full mx-auto object-cover mb-6 border-4 border-white shadow-md">
+                    <h3 class="text-xl font-bold text-dark mb-1">Sanduni Silva</h3>
+                    <p class="text-primary font-medium mb-4">Cultural Guide</p>
+                    <p class="text-gray-600 text-sm mb-6">Will take you through local village experiences, tea tasting,
+                        and authentic food.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-300 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <h3 class="text-white text-2xl font-serif font-bold mb-6">Yaman <span
+                            class="text-secondary">Deniyaye</span></h3>
+                    <p class="text-gray-400 mb-6">Discover the hidden beauty of Deniyaya. We offer the best travel
+                        experiences tailored for nature lovers.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors duration-300"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors duration-300"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors duration-300"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors duration-300"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="hover:text-secondary transition-colors"><i
+                                    class="fas fa-chevron-right text-xs mr-2"></i> Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors"><i
+                                    class="fas fa-chevron-right text-xs mr-2"></i> About Us</a></li>
+                        <li><a href="destinations.html" class="hover:text-secondary transition-colors"><i
+                                    class="fas fa-chevron-right text-xs mr-2"></i> Destinations</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors"><i
+                                    class="fas fa-chevron-right text-xs mr-2"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-6">Popular Places</h4>
+                    <ul class="space-y-4">
+                        <li><a href="destinations.html" class="hover:text-secondary transition-colors"><i
+                                    class="fas fa-chevron-right text-xs mr-2"></i> Sinharaja Forest</a></li>
+                        <li><a href="destinations.html" class="hover:text-secondary transition-colors"><i
+                                    class="fas fa-chevron-right text-xs mr-2"></i> Patna Waterfall</a></li>
+                        <li><a href="destinations.html" class="hover:text-secondary transition-colors"><i
+                                    class="fas fa-chevron-right text-xs mr-2"></i> Kanneliya</a></li>
+                        <li><a href="destinations.html" class="hover:text-secondary transition-colors"><i
+                                    class="fas fa-chevron-right text-xs mr-2"></i> Tea Estates</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-lg font-bold mb-6">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1.5 mr-3 text-secondary"></i>
+                            <span>Main Street, Deniyaya, <br>Sri Lanka</span>
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-secondary"></i> <span>+94 071
+                                433 8752</span></li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-3 text-secondary"></i>
+                            <span>samila.deniyaye@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2026 Yaman Deniyaye. All Rights Reserved.</p>
+                <div class="mt-4 md:mt-0 space-x-4 text-sm">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
