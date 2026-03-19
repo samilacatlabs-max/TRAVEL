@@ -1,25 +1,25 @@
 /* Custom CSS */
 .hero-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=2039&auto=format&fit=crop');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://media.istockphoto.com/id/598700124/photo/small-village-in-the-mountains-in-the-rain-forest.jpg?s=2048x2048&w=is&k=20&c=ENU61--Mk8J-PGG0-FReQvhR4JEvHTXkvw-bmekI0WA=');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .hero-about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2070&auto=format&fit=crop');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://media.istockphoto.com/id/2200997912/photo/golden-buddha-shrine-sacred-tranquility-at-getabaruwa-rajamaha-viharaya.jpg?s=2048x2048&w=is&k=20&c=agGiDmIACkseM2YWRTOHA44hL_9s2Q9MdLfX6rbPMHY=');
     background-size: cover;
     background-position: center;
 }
 
 .hero-destinations {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1549605659-32d82da3a059?q=80&w=2070&auto=format&fit=crop');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
 }
 
 .hero-contact {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1482685945432-29a7abf2f466?q=80&w=1189&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
 }
@@ -45,7 +45,8 @@
 }
 
 .navbar-scrolled .nav-link:hover {
-    color: #166534; /* primary */
+    color: #166534;
+    /* primary */
 }
 
 .navbar-scrolled .logo-text {
@@ -61,7 +62,8 @@
 }
 
 .navbar-transparent .nav-link:hover {
-    color: #4ade80; /* secondary */
+    color: #4ade80;
+    /* secondary */
 }
 
 /* Custom scrollbar */
@@ -70,14 +72,14 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-    background: #166534; 
+    background: #166534;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #14532d; 
+    background: #14532d;
 }
