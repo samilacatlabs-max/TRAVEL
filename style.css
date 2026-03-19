@@ -1,65 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
-
-html {
-    scroll-behavior: smooth;
-    font-family: 'Outfit', sans-serif;
+/* Custom CSS */
+.hero-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://w0.peakpx.com/wallpaper/840/825/HD-wallpaper-sinharaja-forest-sri-lanka-forest-rock-creek-trees-waterfalls-water-green-ferns-bridge-nature-river.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-h1, h2, h3, h4, h5, h6, .font-serif {
-    font-family: 'Playfair Display', serif;
+.hero-about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://media.istockphoto.com/id/2200997912/photo/golden-buddha-shrine-sacred-tranquility-at-getabaruwa-rajamaha-viharaya.jpg?s=2048x2048&w=is&k=20&c=agGiDmIACkseM2YWRTOHA44hL_9s2Q9MdLfX6rbPMHY=');
+    background-size: cover;
+    background-position: center;
 }
 
-/* Custom Scrollbar */
+.hero-destinations {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1482685945432-29a7abf2f466?q=80&w=1189&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-zoom-image {
+    transition: transform 0.5s ease;
+}
+
+.group:hover .card-zoom-image {
+    transform: scale(1.1);
+}
+
+/* Navbar scroll effect */
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    color: #1f2937 !important;
+}
+
+.navbar-scrolled .nav-link {
+    color: #4b5563;
+}
+
+.navbar-scrolled .nav-link:hover {
+    color: #166534;
+    /* primary */
+}
+
+.navbar-scrolled .logo-text {
+    color: #166534;
+}
+
+.navbar-transparent .logo-text {
+    color: #ffffff;
+}
+
+.navbar-transparent .nav-link {
+    color: #f3f4f6;
+}
+
+.navbar-transparent .nav-link:hover {
+    color: #4ade80;
+    /* secondary */
+}
+
+/* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
-    background: #10b981;
+    background: #166534;
     border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-    background: #059669;
+    background: #14532d;
 }
-
-/* Utilities */
-.glass {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.glass-dark {
-    background: rgba(15, 23, 42, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.text-shadow {
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.hover-scale {
-    transition: transform 0.3s ease-in-out;
-}
-.hover-scale:hover {
-    transform: scale(1.05);
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
-}
-
-.delay-100 { animation-delay: 0.1s; }
-.delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
